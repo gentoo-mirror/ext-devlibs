@@ -16,7 +16,7 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 ESVN_REPO_URI="svn://sidvind.com/code/trunk/Projects/libportable/"
-ESVN_STORE_DIR="${PORTAGE_ACTUAL_DISTDIR-${DISTDIR}}/svn-src/"
+ESVN_PROJECT="libportable"
 
 src_unpack() {
 	subversion_src_unpack
