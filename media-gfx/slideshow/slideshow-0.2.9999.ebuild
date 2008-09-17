@@ -23,7 +23,7 @@ mysql? ( dev-db/mysql )"
 RDEPEND="${DEPEND}"
 
 ESVN_REPO_URI="svn://sidvind.com/slideshow/trunk"
-ESVN_STORE_DIR="${PORTAGE_ACTUAL_DISTDIR-${DISTDIR}}/svn-src/"
+ESVN_PROJECT="slideshow"
 
 src_unpack() {
 	subversion_src_unpack
