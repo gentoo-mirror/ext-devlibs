@@ -11,7 +11,7 @@ start() {
 	ebegin "Starting Pedro"
 	start-stop-daemon --start --quiet --background --make-pidfile \
 		--pidfile /var/run/pedro.pid --exec /usr/bin/pedro \
-		-- -P${PEDRO_PORT:1234} ${PEDRO_OPTS}
+		-- -P ${PEDRO_PORT:1234} ${PEDRO_OPTS}
 	eend $?
 }
 
