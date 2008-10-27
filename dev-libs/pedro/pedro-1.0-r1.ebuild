@@ -23,5 +23,5 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" install || die "emake install failed"
 	newinitd "${FILESDIR}"/pedro.initd pedro
-	newconfd "${FILESDIR}"/pedro.confg pedro
+	newconfd "${FILESDIR}"/pedro.confd pedro
 }
