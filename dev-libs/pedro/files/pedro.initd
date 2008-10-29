@@ -8,10 +8,13 @@ depend() {
 }
 
 start() {
+	local my_opts="${PEDRO_OPTS}"
+	[ "${PEDRO_PORT}" != "" ] && my_opts="-P${PEDRO_PORT} ${my_opts}"
+
 	ebegin "Starting Pedro"
 	start-stop-daemon --start --quiet --background --make-pidfile \
 		--pidfile /var/run/pedro.pid --exec /usr/bin/pedro \
-		-- -P ${PEDRO_PORT:1234} ${PEDRO_OPTS}
+		-- ${my_opts}
 	eend $?
 }
 
