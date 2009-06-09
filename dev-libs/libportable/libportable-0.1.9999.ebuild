@@ -20,6 +20,7 @@ ESVN_PROJECT="libportable"
 
 src_unpack() {
 	subversion_src_unpack
+	eautoreconf
 }
 
 src_compile() {
