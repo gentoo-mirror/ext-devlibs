@@ -2,8 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit subversion
+inherit subversion autotools
 
+EAPI="2"
 DESCRIPTION="Portable code"
 HOMEPAGE="http://projects.sidvind.com/libportable/"
 
@@ -21,11 +22,6 @@ ESVN_PROJECT="libportable"
 src_unpack() {
 	subversion_src_unpack
 	eautoreconf
-}
-
-src_compile() {
-	econf || die "econf failed"
-	emake || die "emake failed"
 }
 
 src_install() {
