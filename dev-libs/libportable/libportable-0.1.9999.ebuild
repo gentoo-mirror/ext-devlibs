@@ -16,7 +16,7 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 
-ESVN_REPO_URI="svn://sidvind.com/code/trunk/Projects/libportable/"
+ESVN_REPO_URI="svn://sidvind.com/code/trunk/Projects/libportable/trunk"
 ESVN_PROJECT="libportable"
 
 src_unpack() {
