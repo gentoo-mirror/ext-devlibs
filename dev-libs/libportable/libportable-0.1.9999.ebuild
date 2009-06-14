@@ -21,7 +21,7 @@ ESVN_PROJECT="libportable"
 
 src_unpack() {
 	subversion_src_unpack
-	eautoreconf
+	eautoreconf || die "eautoreconf failed"
 }
 
 src_install() {
