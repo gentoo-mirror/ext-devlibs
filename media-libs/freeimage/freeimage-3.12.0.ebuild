@@ -29,12 +29,14 @@ src_prepare() {
 		-e "/^CC =/s:gcc:$(tc-getCC) ${CFLAGS} -Wall:" \
 		-e "/^CXX =/s:g++:$(tc-getCXX) ${CXXFLAGS} -Wall:" \
 		-e "/^AR = /s:ar:$(tc-getAR):" \
-		-e "/^INCDIR = /s:/usr/include:${D}/usr/include:" \
-		-e "/^INSTALLDIR = /s:/usr/lib:${D}/usr/$(get_libdir):" \
 		-e '/^COMPILERFLAGS =/s:-O3:-fPIC:' \
 		-e "/\$(CC) -s /s: -s : ${LDFLAGS} :" \
 		Makefile.{gnu,fip} \
 		|| die "sed failed"
+
+#		-e "/^INCDIR = /s:/usr/include:${D}/usr/include:" \
+#		-e "/^INSTALLDIR = /s:/usr/lib:${D}/usr/$(get_libdir):" \
+
 }
 
 src_compile() {
@@ -46,7 +48,7 @@ src_compile() {
 
 src_install() {
 	dodir /usr/include /usr/$(get_libdir)
-	emake -f Makefile.gnu install || die "emake install failed"
+	emake DESTDIR="${D}" -f Makefile.gnu install || die "emake install failed"
 	if use cxx ; then
 		emake -f Makefile.fip install || die "emake install fip failed"
 	fi
