@@ -33,10 +33,6 @@ src_prepare() {
 		-e "/\$(CC) -s /s: -s : ${LDFLAGS} :" \
 		Makefile.{gnu,fip} \
 		|| die "sed failed"
-
-#		-e "/^INCDIR = /s:/usr/include:${D}/usr/include:" \
-#		-e "/^INSTALLDIR = /s:/usr/lib:${D}/usr/$(get_libdir):" \
-
 }
 
 src_compile() {
