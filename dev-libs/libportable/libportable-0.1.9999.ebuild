@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+WANT_AUTOMAKE="1.11"
+
 inherit subversion autotools
 
 EAPI="2"
@@ -22,6 +24,12 @@ ESVN_PROJECT="libportable"
 src_unpack() {
 	subversion_src_unpack
 	eautoreconf || die "eautoreconf failed"
+}
+
+src_configure() {
+    econf \
+    	  --enable-silent-rules \
+	  || die "econf failed"
 }
 
 src_install() {
