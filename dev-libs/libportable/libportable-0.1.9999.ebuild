@@ -6,7 +6,7 @@ WANT_AUTOMAKE="1.11"
 
 inherit subversion autotools
 
-EAPI="2"
+EAPI="3"
 DESCRIPTION="Portable code"
 HOMEPAGE="http://projects.sidvind.com/libportable/"
 
@@ -23,6 +23,8 @@ ESVN_PROJECT="libportable"
 
 src_unpack() {
 	subversion_src_unpack
+	cd "${S}"
+	rm -f configure
 	eautoreconf || die "eautoreconf failed"
 }
 
@@ -33,5 +35,5 @@ src_configure() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
+	einstall  || die "emake install failed"
 }
