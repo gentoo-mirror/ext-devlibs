@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
-NEED_PYTHON=2.4
+EAPI=3
+PYTHON_DEPEND="2"
 inherit eutils distutils
 
 DESCRIPTION="Python bindings for libshout 2"
