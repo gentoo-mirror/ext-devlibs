@@ -1,0 +1,79 @@
+diff -ru synergy-plus-1.3.4-orig/configure.in synergy-plus-1.3.4/configure.in
+--- synergy-plus-1.3.4-orig/configure.in	2009-07-24 21:57:20.000000000 +0200
++++ synergy-plus-1.3.4/configure.in	2010-06-23 15:19:20.000000000 +0200
+@@ -161,6 +161,22 @@
+ 		XEXT_LDADD="$XEXT_LDADD -lXinerama"
+ 	fi
+ 
++	acx_have_xrandr=yes
++	AC_CHECK_LIB(Xrandr,
++		XRRQueryExtension,
++		[acx_have_xrandr=yes],
++		[acx_have_xrandr=no],
++		[$X_LIBS -lXrandr -lX11 $X_EXTRA_LIBS])
++	if test x"$acx_have_xrandr" = xyes; then
++		AC_CHECK_HEADERS([X11/extensions/Xrandr.h],
++			[acx_have_xrandr=yes],
++			[acx_have_xrandr=no],
++			[#include <X11/Xlib.h>])
++	fi
++	if test x"$acx_have_xrandr" = xyes; then
++		XEXT_LDADD="$XEXT_LDADD -lXrandr"
++	fi
++
+ 	X_DPMS_LDADD=
+ 	acx_have_dpms=no
+ 	AC_CHECK_LIB(Xext,
+diff -ru synergy-plus-1.3.4-orig/lib/platform/CXWindowsScreen.cpp synergy-plus-1.3.4/lib/platform/CXWindowsScreen.cpp
+--- synergy-plus-1.3.4-orig/lib/platform/CXWindowsScreen.cpp	2009-07-21 22:28:40.000000000 +0200
++++ synergy-plus-1.3.4/lib/platform/CXWindowsScreen.cpp	2010-06-23 15:47:21.000000000 +0200
+@@ -51,6 +51,9 @@
+ #		include <X11/extensions/Xinerama.h>
+ 		}
+ #	endif
++#	if HAVE_X11_EXTENSIONS_XRANDR_H
++#		include <X11/extensions/Xrandr.h>
++#	endif
+ #	if HAVE_XKB_EXTENSION
+ #		include <X11/XKBlib.h>
+ #	endif
+@@ -923,9 +926,31 @@
+ 	// get shape of default screen
+ 	m_x = 0;
+ 	m_y = 0;
++
+ 	m_w = WidthOfScreen(DefaultScreenOfDisplay(m_display));
+ 	m_h = HeightOfScreen(DefaultScreenOfDisplay(m_display));
+ 
++	int eventBase, errorBase;
++
++#if HAVE_X11_EXTENSIONS_XRANDR_H
++	if (XRRQueryExtension(m_display, &eventBase, &errorBase)){
++	  int numScreens;
++	  XRRScreenSize* xrrs;
++	  Rotation rotation;
++	  xrrs = XRRSizes(m_display, DefaultScreen(m_display), &numScreens);
++	  XRRRotations(m_display, DefaultScreen(m_display), &rotation);
++	  if (xrrs != NULL) {
++	    if (rotation & !(RR_Rotate_90|RR_Rotate_270) ){
++	      m_w = xrrs->width;
++	      m_h = xrrs->height;
++	    } else {
++	      m_w = xrrs->height;
++	      m_h = xrrs->width;
++	    }
++	  }
++	}
++#endif
++
+ 	// get center of default screen
+ 	m_xCenter = m_x + (m_w >> 1);
+ 	m_yCenter = m_y + (m_h >> 1);
+@@ -945,7 +970,6 @@
+ 	// screen instead of the logical screen.
+ 	m_xinerama = false;
+ #if HAVE_X11_EXTENSIONS_XINERAMA_H
+-	int eventBase, errorBase;
+ 	if (XineramaQueryExtension(m_display, &eventBase, &errorBase) &&
+ 		XineramaIsActive(m_display)) {
+ 		int numScreens;
