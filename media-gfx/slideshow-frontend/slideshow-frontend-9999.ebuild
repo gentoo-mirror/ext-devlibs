@@ -26,9 +26,9 @@ src_unpack() {
 }
 
 src_compile(){
-	ewarning "[insert python stuff here]"
+	einfo "[insert python stuff here]"
 }
 
 src_install(){
-	ewarning "[install stuff here]"
+	einfo "[install stuff here]"
 }
