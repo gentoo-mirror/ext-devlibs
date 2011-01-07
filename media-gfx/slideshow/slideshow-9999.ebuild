@@ -30,6 +30,7 @@ ESVN_PROJECT="slideshow"
 
 src_unpack() {
 	subversion_src_unpack
+	cd "${S}"
 	eautoreconf
 }
 
