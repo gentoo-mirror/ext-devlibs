@@ -14,7 +14,8 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND="dev-python/cherrypy
-dev-python/genshi"
+dev-python/genshi
+dev-python/xorg_query"
 RDEPEND="${DEPEND}"
 
 ESVN_REPO_URI="svn://sidvind.com/slideshow/trunk"
