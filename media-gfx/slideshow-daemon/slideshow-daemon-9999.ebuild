@@ -10,7 +10,7 @@ HOMEPAGE="http://sidvind.com:8000/slideshow"
 
 LICENSE="AGPLv3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS=""
 IUSE="debug +sdl +sqlite3 +dbus mysql"
 
 DEPEND="dev-libs/libportable
