@@ -17,7 +17,8 @@ IUSE=""
 
 DEPEND="dev-python/cherrypy
 dev-python/genshi
-dev-python/xorg_query"
+dev-python/xorg_query
+dev-python/htmlcolor"
 RDEPEND="${DEPEND}"
 
 ESVN_REPO_URI="svn://sidvind.com/slideshow/trunk"
