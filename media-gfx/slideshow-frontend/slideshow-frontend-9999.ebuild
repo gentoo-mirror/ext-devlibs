@@ -2,8 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
-inherit subversion autotools
+EAPI=3
+PYTHON_DEPEND="2"
+SUPPORT_PYTHON_ABIS="1"
+inherit subversion distutils
 
 DESCRIPTION="Slideshow is a kiosk-style application for showing text, image and video in a loop on monitors and projectors."
 HOMEPAGE="http://sidvind.com:8000/slideshow"
@@ -23,12 +25,4 @@ ESVN_PROJECT="slideshow"
 
 src_unpack() {
 	subversion_src_unpack
-}
-
-src_compile(){
-	einfo "[insert python stuff here]"
-}
-
-src_install(){
-	einfo "[install stuff here]"
 }
