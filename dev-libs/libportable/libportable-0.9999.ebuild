@@ -3,10 +3,10 @@
 # $Header: $
 
 WANT_AUTOMAKE="1.11"
+EAPI="3"
 
 inherit subversion autotools
 
-EAPI="3"
 DESCRIPTION="Portable code"
 HOMEPAGE="http://projects.sidvind.com/libportable/"
 
