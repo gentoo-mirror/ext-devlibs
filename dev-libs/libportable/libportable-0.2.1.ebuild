@@ -12,3 +12,7 @@ LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
+
+src_install() {
+	emake DESTDIR="${D}" install || die "make install failed"
+}
