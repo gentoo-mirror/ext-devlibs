@@ -12,7 +12,7 @@ HOMEPAGE="http://projects.sidvind.com/libportable/"
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND=""
@@ -29,8 +29,8 @@ src_unpack() {
 }
 
 src_configure() {
-    econf \
-    	  --enable-silent-rules \
+	econf \
+		  --enable-silent-rules \
 	  || die "econf failed"
 }
 
