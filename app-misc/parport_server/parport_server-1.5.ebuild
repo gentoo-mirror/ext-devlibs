@@ -23,5 +23,5 @@ src_unpack(){
 
 src_install() {
 		emake DESTDIR="${D}" install
-		newinitd "${FILESDIR}"/parserver.init.d parserver || die
+		newinitd "${FILESDIR}"/parport_server.init parport_server
 }
