@@ -3,7 +3,7 @@
 start() {
 	ebegin "Starting parallelport server"
 	start-stop-daemon --start --exec /usr/bin/parserver \
-	    --pidfile /var/run/parserver.pid \
+			-b -m --pidfile /var/run/parserver.pid \
 	    -- /dev/parport0
 	eend $?
 }
