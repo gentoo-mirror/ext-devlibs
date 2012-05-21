@@ -1,6 +1,5 @@
-inherit subversion cmake-utils
-
 EAPI="2"
+inherit subversion cmake-utils
 
 LICENSE="LGPL-2"
 KEYWORDS="~amd64 ~x86"
@@ -12,7 +11,7 @@ ESVN_STORE_DIR="${PORTAGE_ACTUAL_DISTDIR-${DISTDIR}}/svn-src/"
 DEPEND="media-libs/taglib"
 
 src_unpack() {
-        subversion_src_unpack
+		subversion_src_unpack
 }
 
 #src_compile() {
