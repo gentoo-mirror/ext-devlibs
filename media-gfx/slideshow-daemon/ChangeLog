@@ -3,5 +3,7 @@
 # $Header: $
 
   14 Sep 2013; ext slideshow-daemon-9999.ebuild:
-  Misc QA fixes.
+  Fixing mysql USE-flag.
 
+  14 Sep 2013; ext slideshow-daemon-9999.ebuild:
+  Misc QA fixes.
