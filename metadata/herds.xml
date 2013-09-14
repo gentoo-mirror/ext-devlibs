@@ -3,15 +3,15 @@
 <?xml-stylesheet href="/xsl/herds.xsl" type="text/xsl" ?>
 <?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl" ?>
 <herds>
-  <herd>
-    <name>ext-devlibs</name>
-	<email>ext@sidvind.com</email>
-	<description>Mostly c/c++ and python libraries.</description>
-	<maintainer>
-	  <email>ext@sidvind.com</email>
-	  <name>David Sveningsson</name>
-	</maintainer>
-  </herd>
+	<herd>
+		<name>ext-devlibs</name>
+		<email>ext@sidvind.com</email>
+		<description></description>
+		<maintainer>
+			<email>ext@sidvind.com</email>
+			<name>David Sveningsson</name>
+		</maintainer>
+	</herd>
 </herds>
 
 <!--
