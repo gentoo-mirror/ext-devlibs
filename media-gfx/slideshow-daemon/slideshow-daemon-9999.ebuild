@@ -1,14 +1,14 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI=4
 inherit git-2 autotools
 
-DESCRIPTION="Slideshow is a kiosk-style application for showing text, image and video in a loop on monitors and projectors."
+DESCRIPTION="Slideshow is a kiosk-style application for showing text, image and video in a loop."
 HOMEPAGE="https://github.com/ext/slideshow/"
 
-LICENSE="AGPLv3"
+LICENSE="AGPL-3"
 SLOT="0"
 KEYWORDS=""
 IUSE="debug +sdl +sqlite3 dbus +mysql"
