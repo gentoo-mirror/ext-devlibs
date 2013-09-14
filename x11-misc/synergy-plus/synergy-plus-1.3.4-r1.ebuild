@@ -2,9 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-misc/synergy-plus/synergy-plus-1.3.4.ebuild,v 1.4 2010/06/11 19:52:24 phajdan.jr Exp $
 
-inherit eutils autotools
-
 EAPI="2"
+inherit eutils autotools
 
 DESCRIPTION="Lets you easily share a single mouse and keyboard between multiple
 computers. An active fork of synergy"
