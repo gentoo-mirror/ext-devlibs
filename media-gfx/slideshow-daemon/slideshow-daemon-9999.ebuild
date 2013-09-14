@@ -3,15 +3,15 @@
 # $Header: $
 
 EAPI=4
-inherit subversion autotools
+inherit git-2 autotools
 
 DESCRIPTION="Slideshow is a kiosk-style application for showing text, image and video in a loop on monitors and projectors."
-HOMEPAGE="http://sidvind.com:8000/slideshow"
+HOMEPAGE="https://github.com/ext/slideshow/"
 
 LICENSE="AGPLv3"
 SLOT="0"
 KEYWORDS=""
-IUSE="debug +sdl +sqlite3 +dbus mysql"
+IUSE="debug +sdl +sqlite3 dbus +mysql"
 
 DEPEND="dev-libs/libportable
 virtual/opengl
@@ -25,11 +25,10 @@ sqlite3? ( dev-db/sqlite:3 )
 dbus? ( sys-apps/dbus dev-libs/dbus-glib )"
 RDEPEND="${DEPEND}"
 
-ESVN_REPO_URI="svn://sidvind.com/slideshow/trunk"
-ESVN_PROJECT="slideshow"
+EGIT_REPO_URI="https://github.com/ext/slideshow.git"
 
 src_unpack() {
-	subversion_src_unpack
+	git-2_src_unpack
 	cd "${S}"
 	eautoreconf
 }
