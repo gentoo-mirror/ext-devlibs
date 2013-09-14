@@ -37,7 +37,7 @@ src_configure() {
 	econf \
 		$(use_with dbus) \
 		$(use_with sdl) \
-		$(use_with sqlite3)
+		$(use_with sqlite3) \
 		$(use_with mysql)
 	emake || die "emake failed"
 }
