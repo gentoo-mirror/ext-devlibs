@@ -2,12 +2,11 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI="2"
 inherit subversion autotools
 
 DESCRIPTION="Control x10 equipment"
 HOMEPAGE=""
-
-EAPI="2"
 
 LICENSE="BSD"
 SLOT="0"
@@ -28,8 +27,8 @@ src_unpack() {
 
 src_configure() {
 	econf \
-	      $(use_enable erlang) \
-	      || die "econf failed"
+		  $(use_enable erlang) \
+		  || die "econf failed"
 }
 
 src_install() {
