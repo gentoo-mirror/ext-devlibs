@@ -1,9 +1,10 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI=4
-inherit python-distutils-ng git-2
+PYTHON_COMPAT=( python{2_6,2_7,3_2,3_3})
+inherit distutils-r1 git-2
 
 DESCRIPTION="Query xorg for information about displays, screens, resolutions etc."
 HOMEPAGE="https://github.com/ext/xorg_query"
