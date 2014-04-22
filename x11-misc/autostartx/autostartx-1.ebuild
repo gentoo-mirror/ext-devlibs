@@ -4,7 +4,7 @@
 
 EAPI=3
 
-inherit git
+inherit git-r3
 
 EGIT_REPO_URI="git://github.com/ext/autostartx.git"
 
