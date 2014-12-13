@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -14,6 +14,7 @@ KEYWORDS=""
 IUSE="debug +sdl +sqlite3 dbus +mysql"
 
 DEPEND="dev-libs/libportable
+dev-libs/datapack
 virtual/opengl
 media-libs/glew
 media-libs/devil
