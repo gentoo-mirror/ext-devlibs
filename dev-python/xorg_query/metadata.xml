@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<herd>ext-devlibs</herd>
+	<maintainer>
+		<email>ext@sidvind.com</email>
+		<name>David Sveningsson</name>
+	</maintainer>
 </pkgmetadata>

@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -8,9 +8,7 @@ inherit distutils-r1 git-2
 
 DESCRIPTION="Query xorg for information about displays, screens, resolutions etc."
 HOMEPAGE="https://github.com/ext/xorg_query"
-#EGIT_REPO_URI="http://github.com/ext/xorg_query.git"
-EGIT_NONBARE=1
-EGIT_REPO_URI="/home/ext/workspace/xorg_query"
+EGIT_REPO_URI="http://github.com/ext/xorg_query.git"
 
 SLOT="0"
 KEYWORDS="~amd64"
