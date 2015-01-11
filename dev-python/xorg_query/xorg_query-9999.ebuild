@@ -11,7 +11,7 @@ HOMEPAGE="https://github.com/ext/xorg_query"
 EGIT_REPO_URI="http://github.com/ext/xorg_query.git"
 
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 LICENSE="BSD"
 IUSE=""
 
