@@ -1,0 +1,14 @@
+# ChangeLog for dev-python/xorg_query
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  11 Jan 2015; David Sveningsson xorg_query-9999.ebuild:
+  cleanup, removed keywords
+
+*xorg_query-0.6-r1 (30 Nov 2013)
+
+  30 Nov 2013; ext -xorg_query-0.5.ebuild, -xorg_query-0.5-r1.ebuild,
+  -xorg_query-0.6.ebuild, +xorg_query-0.6-r1.ebuild, xorg_query-9999.ebuild,
+  +metadata.xml:
+  using distutils-r1 instead of old python-distutils-ng
+
