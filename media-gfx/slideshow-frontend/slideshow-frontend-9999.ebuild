@@ -1,29 +1,24 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=3
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-inherit subversion distutils
+EAPI=5
+PYTHON_COMPAT=(python2_{6,7})
+DISTUTILS_SINGLE_IMPL="true"
+inherit git-2 distutils-r1
 
-DESCRIPTION="Slideshow is a kiosk-style application for showing text, image and video in a loop on monitors and projectors."
-HOMEPAGE="http://sidvind.com:8000/slideshow"
+DESCRIPTION="Slideshow is a kiosk-style application for showing text, image and video in a loop."
+HOMEPAGE="https://ext.github.io/slideshow/"
 
-LICENSE="AGPLv3"
+LICENSE="AGPL-3"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
 
 DEPEND="dev-python/cherrypy
 dev-python/genshi
-dev-python/xorg_query
+dev-python/python-xlib
 dev-python/htmlcolor"
 RDEPEND="${DEPEND}"
 
-ESVN_REPO_URI="svn://sidvind.com/slideshow/trunk"
-ESVN_PROJECT="slideshow"
-
-src_unpack() {
-	subversion_src_unpack
-}
+EGIT_REPO_URI="https://github.com/ext/slideshow.git"
