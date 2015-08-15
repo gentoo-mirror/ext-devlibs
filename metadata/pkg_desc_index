@@ -26,4 +26,3 @@ media-libs/freeimage 3.13.0 3.13.1: Image library supporting many formats
 media-libs/taglib-extras 9999: 
 net-firewall/sshdfilter 1.5.5: Protects sshd from bruteforce attacks
 x11-misc/autostartx 1: Start X from init.d script as a user
-x11-misc/synergy-plus 1.3.4-r1: Lets you easily share a single mouse and keyboard between multiple computers. An active fork of synergy
