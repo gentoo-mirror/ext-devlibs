@@ -2,12 +2,10 @@ app-admin/reprepro 4.16.0: Debian APT repository creator and maintainer applicat
 app-doc/opengl-manpages 20001215: Man pages for OpenGL
 app-misc/jpegsplit 1.0 1.2: Detect and extract additional data efter end of JPEG-images
 app-misc/parport_server 1.5 1.6 1.7 1.8 1.9: 
-dev-libs/aspartame 0.1.9999: Aspartame
 dev-libs/assimp 2.0.863 3.0.1270: Open Asset Import Library (short name: Assimp).
 dev-libs/awesomium 1.7.2: HTML UI Engine
 dev-libs/cml 1.0.2 1.0.4: The CML (Configurable Math Library) is a C++ vector, matrix, and quaternion math library.
 dev-libs/datapack 0.1 0.2 0.3: datapack
-dev-libs/glm 0.9.4.1 0.9.4.3: OpenGL Mathematics
 dev-libs/leptonlib 1.62: An open source C library for efficient image processing and image analysis operations
 dev-libs/libportable 0.1.0_alpha1 0.2.1 0.2.3 0.9999: Portable code
 dev-libs/libx10 0.9999: Control x10 equipment
@@ -23,6 +21,7 @@ media-gfx/slideshow 9999: Slideshow is a kiosk-style application for showing tex
 media-gfx/slideshow-daemon 9999: Slideshow is a kiosk-style application for showing text, image and video in a loop.
 media-gfx/slideshow-frontend 9999: Slideshow is a kiosk-style application for showing text, image and video in a loop.
 media-libs/freeimage 3.13.0 3.13.1: Image library supporting many formats
+media-libs/glm 0.9.4.1 0.9.4.3 0.9.7.0: OpenGL Mathematics
 media-libs/taglib-extras 9999: 
 net-firewall/sshdfilter 1.5.5: Protects sshd from bruteforce attacks
 x11-misc/autostartx 1: Start X from init.d script as a user
