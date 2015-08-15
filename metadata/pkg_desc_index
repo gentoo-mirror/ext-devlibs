@@ -5,7 +5,7 @@ app-misc/parport_server 1.5 1.6 1.7 1.8 1.9:
 dev-libs/aspartame 0.1.9999: Aspartame
 dev-libs/assimp 2.0.863 3.0.1270: Open Asset Import Library (short name: Assimp).
 dev-libs/awesomium 1.7.2: HTML UI Engine
-dev-libs/cml 1.0.2: The CML (Configurable Math Library) is a free, open-source C++ vector, matrix, and quaternion math library designed for use in games, graphics, computational geometry, and related applications.
+dev-libs/cml 1.0.2 1.0.4: The CML (Configurable Math Library) is a C++ vector, matrix, and quaternion math library.
 dev-libs/datapack 0.1 0.2 0.3: datapack
 dev-libs/glm 0.9.4.1 0.9.4.3: OpenGL Mathematics
 dev-libs/leptonlib 1.62: An open source C library for efficient image processing and image analysis operations
