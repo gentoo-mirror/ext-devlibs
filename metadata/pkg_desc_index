@@ -8,8 +8,6 @@ dev-libs/cml 1.0.2 1.0.4: The CML (Configurable Math Library) is a C++ vector, m
 dev-libs/datapack 0.1 0.2 0.3: datapack
 dev-libs/leptonlib 1.62: An open source C library for efficient image processing and image analysis operations
 dev-libs/libportable 0.1.0_alpha1 0.2.1 0.2.3 0.9999: Portable code
-dev-libs/libx10 0.9999: Control x10 equipment
-dev-libs/pedro 1.0 1.0-r1: Pedro is a subscription/notification communications system that also provides support for peer-to-peer communication.
 dev-perl/Net-PcapWriter 0.711: Perl Net::PcapWriter - simple creation of pcap files from code
 dev-python/htmlcolor 0.1: Parsing HTML and CSS color values
 dev-python/htmltmpl 1.22: templating engine for separation of code and HTML
