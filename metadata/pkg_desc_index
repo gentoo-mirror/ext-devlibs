@@ -20,5 +20,4 @@ media-gfx/slideshow-frontend 9999: Slideshow is a kiosk-style application for sh
 media-libs/freeimage 3.13.0 3.13.1: Image library supporting many formats
 media-libs/glm 0.9.4.1 0.9.4.3 0.9.7.0: OpenGL Mathematics
 media-libs/taglib-extras 9999: 
-net-firewall/sshdfilter 1.5.5: Protects sshd from bruteforce attacks
 x11-misc/autostartx 1: Start X from init.d script as a user
