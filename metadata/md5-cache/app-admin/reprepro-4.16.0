@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure
+DEPEND=>=sys-libs/db-4.3 sys-libs/zlib gpgme? ( app-crypt/gpgme dev-libs/libgpg-error ) archive? ( app-arch/libarchive )
+DESCRIPTION=Debian APT repository creator and maintainer application
+EAPI=4
+HOMEPAGE=http://packages.debian.org/reprepro
+IUSE=archive bzip2 gpgme
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/db-4.3 sys-libs/zlib gpgme? ( app-crypt/gpgme dev-libs/libgpg-error ) archive? ( app-arch/libarchive )
+SLOT=0
+SRC_URI=http://alioth.debian.org/frs/download.php/file/4109/reprepro_4.16.0.orig.tar.gz
+_eclass_exported_funcs=src_configure:-
+_eclasses_=eutils	f20548a2f7b0128068388cd2ec26708a	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=e88c17065019e6823d523f8c713236a8
