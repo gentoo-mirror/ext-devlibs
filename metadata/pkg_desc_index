@@ -16,7 +16,6 @@ dev-python/shout-python 0.2.1: Python bindings for libshout 2
 dev-util/patchelf 9999: Small utility to modify the dynamic linker and RPATH of ELF executables.
 media-gfx/slideshow 9999: Slideshow is a kiosk-style application for showing text, image and video in a loop on monitors and projectors
 media-gfx/slideshow-daemon 9999: Slideshow is a kiosk-style application for showing text, image and video in a loop.
-media-gfx/slideshow-frontend 9999: Slideshow is a kiosk-style application for showing text, image and video in a loop.
 media-libs/freeimage 3.13.0 3.13.1: Image library supporting many formats
 media-libs/glm 0.9.4.1 0.9.4.3 0.9.7.0: OpenGL Mathematics
 media-libs/taglib-extras 9999: 
