@@ -8,5 +8,5 @@ LICENSE=AGPL-3
 RDEPEND=dev-libs/libportable dev-libs/datapack virtual/opengl media-libs/glew media-libs/devil x11-base/xorg-x11 x11-proto/xf86vidmodeproto sdl? ( media-libs/libsdl ) mysql? ( dev-db/mysql ) sqlite? ( dev-db/sqlite:3 ) dbus? ( sys-apps/dbus dev-libs/dbus-glib )
 SLOT=0
 _eclass_exported_funcs=src_unpack:- src_configure:-
-_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	git-2	df00117322129fb906bb0a53c3d6a020	libtool	b75230758539a7da029e24afdb693960	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	git-2	df00117322129fb906bb0a53c3d6a020	libtool	b75230758539a7da029e24afdb693960	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
 _md5_=aa33bd8df45123f863c218b82ba8dfc1
