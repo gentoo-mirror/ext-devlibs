@@ -11,9 +11,6 @@ dev-libs/leptonlib 1.62 1.72: An open source C library for efficient image proce
 dev-libs/libportable 0.1.0_alpha1 0.2.1 0.2.3 0.9999: Portable code
 dev-perl/Net-PcapWriter 0.711: Perl Net::PcapWriter - simple creation of pcap files from code
 dev-python/htmlcolor 0.1: Parsing HTML and CSS color values
-dev-python/htmltmpl 1.22: templating engine for separation of code and HTML
-dev-python/pybonjour 1.1.1: pybonjour provides a pure-Python interface to Apple Bonjour and compatible DNS-SD libraries such as Avahi
-dev-python/shout-python 0.2.1: Python bindings for libshout 2
 dev-util/patchelf 9999: Small utility to modify the dynamic linker and RPATH of ELF executables.
 media-gfx/slideshow 9999: Slideshow is a kiosk-style application for showing text, image and video in a loop on monitors and projectors
 media-gfx/slideshow-daemon 9999: Slideshow is a kiosk-style application for showing text, image and video in a loop.
