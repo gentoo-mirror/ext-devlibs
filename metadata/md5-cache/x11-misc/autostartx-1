@@ -7,5 +7,5 @@ KEYWORDS=~x86 ~amd64
 RDEPEND=x11-apps/xinit
 SLOT=0
 _eclass_exported_funcs=src_unpack:git-r3 src_install:-
-_eclasses_=git-r3	78651c07ca1c1373bf81545d39eb9769
+_eclasses_=git-r3	4f7ddb4119309845d6687213171ab445
 _md5_=591857ac03895eafc7593b58b61eb66c
