@@ -8,5 +8,4 @@ LICENSE=as-is
 RESTRICT=mirror
 SLOT=0
 SRC_URI=ftp://ftp.sgi.com/opengl/doc/mangl.tar.Z ftp://ftp.sgi.com/opengl/doc/manglu.tar.Z ftp://ftp.sgi.com/opengl/doc/manglx.tar.Z
-_eclass_exported_funcs=src_compile:- src_install:-
 _md5_=d798a6a18d50773cfbc3cb8755dbbd6e

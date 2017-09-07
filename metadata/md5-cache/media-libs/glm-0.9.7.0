@@ -7,5 +7,4 @@ KEYWORDS=~amd64 ~x86
 LICENSE=MIT
 SLOT=0
 SRC_URI=https://github.com/g-truc/glm/releases/download/0.9.7.0/glm-0.9.7.0.zip
-_eclass_exported_funcs=src_install:-
 _md5_=07a23058ac5bec8de572e5de2b9a8fe9
