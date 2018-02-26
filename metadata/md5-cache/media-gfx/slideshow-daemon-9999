@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure unpack
-DEPEND=dev-libs/libportable dev-libs/datapack virtual/opengl media-libs/glew media-libs/devil x11-base/xorg-x11 x11-proto/xf86vidmodeproto sdl? ( media-libs/libsdl ) mysql? ( dev-db/mysql ) sqlite? ( dev-db/sqlite:3 ) dbus? ( sys-apps/dbus dev-libs/dbus-glib ) dev-vcs/git >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEPEND=dev-libs/libportable dev-libs/datapack virtual/opengl media-libs/glew media-libs/devil x11-base/xorg-x11 x11-proto/xf86vidmodeproto sdl? ( media-libs/libsdl ) mysql? ( dev-db/mysql ) sqlite? ( dev-db/sqlite:3 ) dbus? ( sys-apps/dbus dev-libs/dbus-glib ) dev-vcs/git >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15.1:1.15 >=sys-devel/automake-1.16:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=Slideshow is a kiosk-style application for showing text, image and video in a loop.
 EAPI=5
 HOMEPAGE=https://ext.github.io/slideshow/
@@ -7,5 +7,5 @@ IUSE=debug +sdl +sqlite dbus +mysql
 LICENSE=AGPL-3
 RDEPEND=dev-libs/libportable dev-libs/datapack virtual/opengl media-libs/glew media-libs/devil x11-base/xorg-x11 x11-proto/xf86vidmodeproto sdl? ( media-libs/libsdl ) mysql? ( dev-db/mysql ) sqlite? ( dev-db/sqlite:3 ) dbus? ( sys-apps/dbus dev-libs/dbus-glib )
 SLOT=0
-_eclasses_=autotools	dc412f38566b91012efd58b9c203e6c3	git-2	195a672bfaf52d868442171c9469bbb6	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
+_eclasses_=autotools	5c7fb6f361f3a238f78e5328771febd0	git-2	195a672bfaf52d868442171c9469bbb6	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
 _md5_=aa33bd8df45123f863c218b82ba8dfc1
