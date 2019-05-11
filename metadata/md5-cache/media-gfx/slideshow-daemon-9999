@@ -7,5 +7,5 @@ IUSE=debug +sdl +sqlite dbus +mysql
 LICENSE=AGPL-3
 RDEPEND=dev-libs/libportable dev-libs/datapack virtual/opengl media-libs/glew media-libs/devil x11-base/xorg-x11 x11-proto/xf86vidmodeproto sdl? ( media-libs/libsdl ) mysql? ( dev-db/mysql ) sqlite? ( dev-db/sqlite:3 ) dbus? ( sys-apps/dbus dev-libs/dbus-glib )
 SLOT=0
-_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	git-2	249c1a0962573f4ce2c28f0d5b6b35d4	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	b45201c4e6c096b98e250336954e64b9
+_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	git-2	249c1a0962573f4ce2c28f0d5b6b35d4	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	8c7f9d80beedd16f2e5a7f612c609529
 _md5_=aa33bd8df45123f863c218b82ba8dfc1
