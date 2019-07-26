@@ -1,0 +1,9 @@
+BDEPEND=|| ( dev-vcs/subversion[http] dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
+DEFINED_PHASES=preinst unpack
+DESCRIPTION=Portable code
+EAPI=7
+HOMEPAGE=http://projects.sidvind.com/libportable/
+LICENSE=LGPL-3
+SLOT=0
+_eclasses_=estack	43ddf5aaffa7a8d0482df54d25a66a1f	subversion	128c7b49f5671a6b089e47a6064db19e
+_md5_=ae99daa4b4123cd01098d56fe3148f3c
