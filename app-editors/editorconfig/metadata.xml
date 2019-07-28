@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
-<pkgmetadata>
-	<maintainer type="person">
-	<email>ext@sidvind.com</email>
-		<description>Primary maintainer</description>
-	</maintainer>
-	<longdescription>EditorConfig core library written in C (for use by plugins supporting EditorConfig parsing)</longdescription>
-</pkgmetadata>
