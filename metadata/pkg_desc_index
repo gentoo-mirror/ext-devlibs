@@ -10,4 +10,6 @@ dev-perl/Net-PcapWriter 0.711: Perl Net::PcapWriter - simple creation of pcap fi
 dev-python/htmlcolor 0.1-r1: Parsing HTML and CSS color values
 dev-util/patchelf 9999: Small utility to modify the dynamic linker and RPATH of ELF executables.
 media-gfx/slideshow 9999: Slideshow is a kiosk-style application for showing text, image and video in a loop on monitors and projectors
+media-gfx/slideshow-daemon 9999: Slideshow is a kiosk-style application for showing media in a loop.
+media-gfx/slideshow-frontend 9999: Slideshow is a kiosk-style application for showing media in a loop.
 x11-misc/autostartx 1: Start X from init.d script as a user
