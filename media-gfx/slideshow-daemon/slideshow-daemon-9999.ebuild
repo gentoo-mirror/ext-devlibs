@@ -4,7 +4,7 @@
 EAPI=7
 inherit git-r3 autotools
 
-DESCRIPTION="Slideshow is a kiosk-style application for showing text, image and video in a loop."
+DESCRIPTION="Slideshow is a kiosk-style application for showing media in a loop."
 HOMEPAGE="https://ext.github.io/slideshow/"
 
 LICENSE="AGPL-3"
@@ -15,7 +15,7 @@ IUSE="debug +sdl +sqlite dbus +mysql"
 DEPEND="dev-libs/libportable
 dev-libs/datapack
 virtual/opengl
-media-libs/glew
+media-libs/glew:0
 media-libs/devil
 x11-base/xorg-x11
 sdl? ( media-libs/libsdl )
