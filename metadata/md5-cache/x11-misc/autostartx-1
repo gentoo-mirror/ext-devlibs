@@ -7,5 +7,5 @@ KEYWORDS=~x86 ~amd64
 PROPERTIES=live
 RDEPEND=x11-apps/xinit
 SLOT=0
-_eclasses_=git-r3	8ec5b53812bce105ae7943930e4660f8
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
 _md5_=62cdbdd236a84ad6d1f8906d35e1a963
