@@ -1,8 +1,7 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=4
+EAPI=7
 inherit eutils autotools
 
 DESCRIPTION="datapack"
@@ -11,14 +10,13 @@ SRC_URI="https://github.com/ext/datapack/archive/v${PV}.tar.gz -> datapack-${PV}
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 
-src_unpack() {
-	unpack "${A}"
-	cd "${S}"
-	eautoreconf || die "eautoreconf failed"
+src_prepare() {
+	eautoreconf
 }
 
 src_install() {
 	emake DESTDIR="${D}" install || die "emake install failed"
+	find "${D}" -name '*.la' -exec rm -f {} +
 }
