@@ -2,7 +2,7 @@ app-admin/reprepro 5.3.0: Debian APT repository creator and maintainer applicati
 app-doc/opengl-manpages 20001215: Man pages for OpenGL
 app-misc/jpegsplit 1.0 1.2: Detect and extract additional data efter end of JPEG-images
 app-misc/parport_server 1.5 1.6 1.7 1.8 1.9: 
-dev-libs/cml 1.0.2 1.0.4: The CML (Configurable Math Library) is a C++ vector, matrix, and quaternion math library.
+dev-libs/cml 1.0.4: The CML (Configurable Math Library) is a C++ vector, matrix, and quaternion math library.
 dev-libs/datapack 0.3-r1: datapack
 dev-libs/libportable 0.2.3-r1 0.9999: Portable code
 dev-perl/Net-PcapWriter 0.711: Perl Net::PcapWriter - simple creation of pcap files from code
