@@ -7,5 +7,5 @@ INHERIT=subversion
 LICENSE=LGPL-3
 PROPERTIES=live
 SLOT=0
-_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	subversion	a98eebf2efc83b38f8d1982b8a522e75
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	subversion	44c6a1cae0381c100a526e3b348622cd
 _md5_=ae99daa4b4123cd01098d56fe3148f3c
