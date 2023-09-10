@@ -1,8 +1,8 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-inherit eutils autotools
+EAPI=8
+inherit autotools
 
 DESCRIPTION="datapack"
 HOMEPAGE="https://github.com/ext/datapack"
@@ -13,10 +13,11 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 src_prepare() {
+	default
 	eautoreconf
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
+	default
 	find "${D}" -name '*.la' -exec rm -f {} +
 }
