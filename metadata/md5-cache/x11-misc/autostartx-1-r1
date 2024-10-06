@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DEPEND=x11-apps/xinit
+DESCRIPTION=Start X from init.d script as a user
+EAPI=7
+HOMEPAGE=https://github.com/ext/autostartx
+INHERIT=git-r3
+KEYWORDS=~x86 ~amd64
+PROPERTIES=live
+RDEPEND=x11-apps/xinit
+SLOT=0
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=8e2b41cc4bf8d72d0e9e58412bce39c3
