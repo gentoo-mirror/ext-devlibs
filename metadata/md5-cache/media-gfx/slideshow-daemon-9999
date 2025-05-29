@@ -10,5 +10,5 @@ LICENSE=AGPL-3
 PROPERTIES=live
 RDEPEND=dev-libs/libportable dev-libs/datapack virtual/opengl media-libs/glew:0 media-libs/devil x11-base/xorg-x11 sdl? ( media-libs/libsdl ) mysql? ( dev-db/mysql ) sqlite? ( dev-db/sqlite:3 ) dbus? ( sys-apps/dbus dev-libs/dbus-glib )
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	libtool	c81bd096be5f4c82f4e8f156ef112402	autotools	216128ca9bbff45fbea22427005310c7
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	libtool	c81bd096be5f4c82f4e8f156ef112402	autotools	955b29ccd82c1df4755e5f37748d2fa6
 _md5_=c27998a7569f49f84724cfa749c00694
